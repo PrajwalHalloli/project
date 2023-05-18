@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mental Health Quiz</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style3.css" />
+    <script src="mh.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1>Mental Health Quiz!</h1>
+    <div class="result">
+      <h2>
+        Please remember, this test should not be used as a form of diagnosis.
+        The results down below are about common found within mental disorders.
+        These symptoms do not 100% tell you whether you are suffering from a mental disorder.
+        Below each symptom you will find your score and what to do if your score is very high.
+      </h2>
+    <!-- First Question <-->
+    <h2>1.  How often do you feel overwhelmed?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q1a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q1a2" >
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q1a3">
+        
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q1a4">
+    
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Second Question <-->
+    <h2> 2 How often do you feel anxious?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q2a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q2a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q2a3">
+        
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q2a4">
+    
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Third Question <-->
+    <h2>3 How would you rate your stress levels?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q3a1">
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q3a2">
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q3a3">
+      
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q3a4">
+       
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Fourth Question <-->
+    <h2>  4.  How easily do you get angry</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q4a1">
+            <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q4a2">
+            <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q4a3">
+            <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q4a4">
+            <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Fifth Question <-->
+    <h2>5 Feeling down,depreesed,or hopeless?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q5a1">
+       
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q5a2">
+       
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q5a3">
+        
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q5a4">
+        
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sixth Question <-->
+    <h2>6. Trouble falling or staying asleep,or sleeping too much?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q6a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q6a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q6a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q6a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <h2>  7. Feeling tired or having little energy?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q7a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q7a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q7a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q7a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <h2>  8. Poor appetite or overeating?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q8a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q8a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q8a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q8a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+
+    <h2> 9. Feeling bad about yourself-or that you are a failure or have let yourself or your family down?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q9a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q9a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q9a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q9a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+
+    <h2>10.Trouble concentrating on things such as reading the newspaper or watching TV?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q10a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q10a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q10a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q10a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <h2> 11.Moving or speaking so slowly that other people could have noticed? Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q11a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q11a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q11a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q11a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+
+    <h2>12. Thoughts that you would be better off dead or of hurting yourslef in some way?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <button id="q12a1">
+          
+          <div class="desc">Never</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q12a2">
+        
+          <div class="desc">Rarely</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q12a3">
+         
+          <div class="desc">Sometimes</div>
+        </button>
+      </div>
+      <div class="answer-choice">
+        <button id="q12a4">
+         
+          <div class="desc">Often</div>
+        </button>
+      </div>
+    </div>
+     <div class="result">
+      <h2 id="result">
+        Your result is...<h2>
+    
+ 
+    </div>
+    <div class="restart-button">
+      <button id="restart">Refresh</button>
+    </div>
+   </div>
+   <a href="https://en.wikipedia.org/wiki/Mental_health#Physical_activity">Get info</a></body>
+</html>
