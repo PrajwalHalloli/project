@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/pic11.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+}
+nav img{
+    width: 60px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+   float: right;
+   list-style-type: none; 
+   margin-top: 5px;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+} 
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+
+.title{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.title h1{
+    font-size: 42px;
+}
+.title p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.button .btn{
+    position: absolute;
+    top: 75%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.button .vtn{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.vtn:hover{
+    background-color: #fff;
+    color: #000;
+}
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:768px){
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+        }
+    .title h1{
+        font-size: 40px;
+    }
+    
+    .title p{
+        margin: 10px 0 50px;
+        font-size: 12px;
+        color: #fff;
+    }
+    .button .btn{
+        position: absolute;
+        top: 75%;
+        left: 45%;
+        transform: translate(-40%,-50%);
+        border: 2px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.6s ease;
+    }
+    .button .vtn{
+        position: absolute;
+        top: 85%;
+        left: 49%;
+        transform: translate(-50%,-50%);
+        border: 2px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.6s ease;
+     }
+     .nav-link ul li{
+        display: block;
+     }
+     .nav-link{
+        position: absolute;
+        background: lightblue;
+        height: 95vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+     }
+     nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+     }
+     .nav-link ul{
+        padding: 20px;
+     }
+
+}
+/*-----Diseases-----*/
+
+.diseases{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.disorders{
+flex-basis: 22%;
+background: lightblue;
+border-radius: 20px;
+margin-bottom: 5%;
+padding: 10px 10px;
+box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.disorders:hover{
+    box-shadow: 0 0 20px 0px rgba(23, 16, 16, 0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+/*---call to action---*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(99, 92, 92, 0.7),rgba(81, 77, 77, 0.7)),url(images/pic10.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+     color: #fff;
+     margin-bottom: 40px;
+     padding: 0;
+}
+.cta .bba{
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.bba:hover{
+    background-color: #fff;
+    color: #000;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*---foter--*/
+
+.icons{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.made{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+/*---login page---*/
+ 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+ }
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+.forgot a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p :hover{
+    text-decoration: underline;
+}
+.register p a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
